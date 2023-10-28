@@ -11,7 +11,7 @@ import plugin from '../../lib/plugins/plugin.js';
  */
 const GroupRegex = {
     '123456': /^#?椰奶状态(pro)?$|^#?运行状态$/,
-    '961609439': /^#签到$|^#状态$/,
+    '654321': /^#签到$|^#状态$/,
 };
 
 export class fengkong extends plugin{
