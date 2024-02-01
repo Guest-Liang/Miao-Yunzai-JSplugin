@@ -1,7 +1,7 @@
 import { segment } from "icqq";
 import plugin from '../../lib/plugins/plugin.js';
 /**
- * date:2023.10.29
+ * date:2024.2.1
  * Author: GuestLiang (github.com/GuestLiang)
  * 不只是按锅巴中设置的那些大插件屏蔽指令，现在更可细分按群按指令屏蔽，具体到某一正则表达式
  */
@@ -36,7 +36,7 @@ export class fengkong extends plugin{
             return false; //如果没有对应的群号的正则，就放行
         } else {
             if (GroupRegex[e.group_id].test(e.msg)){
-                e.reply(`权限不足，执行该指令的最低权限为：Master\n可联系bot主人调整`);
+                e.reply(`权限不足，执行该指令的最低权限为：Master\n可联系bot主人调整`, true);
                 return true;
             }
             return false;
